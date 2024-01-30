@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const FooterPage = () => {
@@ -9,9 +11,14 @@ const FooterPage = () => {
             <div className="row">
               <div className="col-lg-3 col-md-4 col-12">
                 <div className="footer-logo">
-                  <a href="index.html">
-                    <img src="assets/images/logo/white-logo.svg" alt="#" />
-                  </a>
+                  <Link href="index.html">
+                    <Image
+                      height={100}
+                      width={100}
+                      src="/assets/images/logo/white-logo.svg"
+                      alt="#"
+                    />
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-9 col-md-8 col-12">
@@ -65,9 +72,9 @@ const FooterPage = () => {
                     </li>
                   </ul>
                   <p className="mail">
-                    <a href="mailto:support@shopgrids.com">
+                    <Link href="mailto:support@shopgrids.com">
                       support@shopgrids.com
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>
@@ -76,18 +83,18 @@ const FooterPage = () => {
                   <h3>Our Mobile App</h3>
                   <ul className="app-btn">
                     <li>
-                      <a href="javascript:void(0)">
+                      <Link href="javascript:void(0)">
                         <i className="lni lni-apple" />
                         <span className="small-title">Download on the</span>
                         <span className="big-title">App Store</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">
+                      <Link href="javascript:void(0)">
                         <i className="lni lni-play-store" />
                         <span className="small-title">Download on the</span>
                         <span className="big-title">Google Play</span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -97,19 +104,19 @@ const FooterPage = () => {
                   <h3>Information</h3>
                   <ul>
                     <li>
-                      <a href="javascript:void(0)">About Us</a>
+                      <Link href="javascript:void(0)">About Us</Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Contact Us</a>
+                      <Link href="javascript:void(0)">Contact Us</Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Downloads</a>
+                      <Link href="javascript:void(0)">Downloads</Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Sitemap</a>
+                      <Link href="javascript:void(0)">Sitemap</Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">FAQs Page</a>
+                      <Link href="javascript:void(0)">FAQs Page</Link>
                     </li>
                   </ul>
                 </div>
@@ -119,23 +126,27 @@ const FooterPage = () => {
                   <h3>Shop Departments</h3>
                   <ul>
                     <li>
-                      <a href="javascript:void(0)">
+                      <Link href="javascript:void(0)">
                         Computers &amp; Accessories
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Smartphones &amp; Tablets</a>
+                      <Link href="javascript:void(0)">
+                        Smartphones &amp; Tablets
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">TV, Video &amp; Audio</a>
+                      <Link href="javascript:void(0)">
+                        TV, Video &amp; Audio
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">
+                      <Link href="javascript:void(0)">
                         Cameras, Photo &amp; Video
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Headphones</a>
+                      <Link href="javascript:void(0)">Headphones</Link>
                     </li>
                   </ul>
                 </div>
@@ -151,8 +162,10 @@ const FooterPage = () => {
               <div className="col-lg-4 col-12">
                 <div className="payment-gateway">
                   <span>We Accept:</span>
-                  <img
-                    src="assets/images/footer/credit-cards-footer.png"
+                  <Image
+                    height={25}
+                    width={1000}
+                    src="/assets/images/footer/credit-cards-footer.png"
                     alt="#"
                   />
                 </div>
@@ -161,13 +174,13 @@ const FooterPage = () => {
                 <div className="copyright">
                   <p>
                     Designed and Developed by
-                    <a
+                    <Link
                       href="https://graygrids.com/"
                       rel="nofollow"
                       target="_blank"
                     >
                       GrayGrids
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>
@@ -177,24 +190,24 @@ const FooterPage = () => {
                     <span>Follow Us On:</span>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">
+                    <Link href="javascript:void(0)">
                       <i className="lni lni-facebook-filled" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">
+                    <Link href="javascript:void(0)">
                       <i className="lni lni-twitter-original" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">
+                    <Link href="javascript:void(0)">
                       <i className="lni lni-instagram" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">
+                    <Link href="javascript:void(0)">
                       <i className="lni lni-google" />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
