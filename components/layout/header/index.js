@@ -3,8 +3,10 @@ import NavbarPage from "../navbarPage";
 
 export default function HeaderPage() {
   return (
-    <header class="header navbar-area">
-      <NavbarPage />
-    </header>
+    <>
+      <header class="header navbar-area">
+        <NavbarPage />
+      </header>
+    </>
   );
 }
