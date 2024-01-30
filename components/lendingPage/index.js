@@ -1,5 +1,4 @@
 import React from "react";
-import HeaderPage from "../layout/header";
 import HeroAds from "./heroAds";
 import LayoutPage from "../layout";
 
