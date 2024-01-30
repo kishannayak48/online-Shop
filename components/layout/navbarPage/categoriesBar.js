@@ -1,4 +1,7 @@
+import Link from "next/link";
 import React from "react";
+import { NavDropdown } from "react-bootstrap";
+import { FaFacebookF, FaInstagram, FaSkype, FaTwitter } from "react-icons/fa6";
 
 function CategoriesBar() {
   return (
@@ -14,74 +17,80 @@ function CategoriesBar() {
               </span>
               <ul className="sub-category">
                 <li>
-                  <a href="product-grids.html">
+                  <Link href="product-grids.html">
                     Electronics <i className="lni lni-chevron-right" />
-                  </a>
+                  </Link>
                   <ul className="inner-sub-category">
                     <li>
-                      <a href="product-grids.html">Digital Cameras</a>
+                      <Link href="product-grids.html">Digital Cameras</Link>
                     </li>
                     <li>
-                      <a href="product-grids.html">Camcorders</a>
+                      <Link href="product-grids.html">Camcorders</Link>
                     </li>
                     <li>
-                      <a href="product-grids.html">Camera Drones</a>
+                      <Link href="product-grids.html">Camera Drones</Link>
                     </li>
                     <li>
-                      <a href="product-grids.html">Smart Watches</a>
+                      <Link href="product-grids.html">Smart Watches</Link>
                     </li>
                     <li>
-                      <a href="product-grids.html">Headphones</a>
+                      <Link href="product-grids.html">Headphones</Link>
                     </li>
                     <li>
-                      <a href="product-grids.html">MP3 Players</a>
+                      <Link href="product-grids.html">MP3 Players</Link>
                     </li>
                     <li>
-                      <a href="product-grids.html">Microphones</a>
+                      <Link href="product-grids.html">Microphones</Link>
                     </li>
                     <li>
-                      <a href="product-grids.html">Chargers</a>
+                      <Link href="product-grids.html">Chargers</Link>
                     </li>
                     <li>
-                      <a href="product-grids.html">Batteries</a>
+                      <Link href="product-grids.html">Batteries</Link>
                     </li>
                     <li>
-                      <a href="product-grids.html">Cables &amp; Adapters</a>
+                      <Link href="product-grids.html">
+                        Cables &amp; Adapters
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="product-grids.html">accessories</a>
+                  <Link href="product-grids.html">accessories</Link>
                 </li>
                 <li>
-                  <a href="product-grids.html">Televisions</a>
+                  <Link href="product-grids.html">Televisions</Link>
                 </li>
                 <li>
-                  <a href="product-grids.html">best selling</a>
+                  <Link href="product-grids.html">best selling</Link>
                 </li>
                 <li>
-                  <a href="product-grids.html">top 100 offer</a>
+                  <Link href="product-grids.html">top 100 offer</Link>
                 </li>
                 <li>
-                  <a href="product-grids.html">sunglass</a>
+                  <Link href="product-grids.html">sunglass</Link>
                 </li>
                 <li>
-                  <a href="product-grids.html">watch</a>
+                  <Link href="product-grids.html">watch</Link>
                 </li>
                 <li>
-                  <a href="product-grids.html">man’s product</a>
+                  <Link href="product-grids.html">man’s product</Link>
                 </li>
                 <li>
-                  <a href="product-grids.html">Home Audio &amp; Theater</a>
+                  <Link href="product-grids.html">
+                    Home Audio &amp; Theater
+                  </Link>
                 </li>
                 <li>
-                  <a href="product-grids.html">Computers &amp; Tablets </a>
+                  <Link href="product-grids.html">
+                    Computers &amp; Tablets{" "}
+                  </Link>
                 </li>
                 <li>
-                  <a href="product-grids.html">Video Games </a>
+                  <Link href="product-grids.html">Video Games </Link>
                 </li>
                 <li>
-                  <a href="product-grids.html">Home Appliances </a>
+                  <Link href="product-grids.html">Home Appliances </Link>
                 </li>
               </ul>
             </div>
@@ -107,16 +116,16 @@ function CategoriesBar() {
               >
                 <ul id="nav" className="navbar-nav ms-auto">
                   <li className="nav-item">
-                    <a
+                    <Link
                       href="index.html"
                       className="active"
                       aria-label="Toggle navigation"
                     >
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a
+                    <Link
                       className="dd-menu collapsed"
                       href="javascript:void(0)"
                       data-bs-toggle="collapse"
@@ -126,30 +135,53 @@ function CategoriesBar() {
                       aria-label="Toggle navigation"
                     >
                       Pages
-                    </a>
+                    </Link>
                     <ul className="sub-menu collapse" id="submenu-1-2">
                       <li className="nav-item">
-                        <a href="about-us.html">About Us</a>
+                        <Link href="about-us.html">About Us</Link>
                       </li>
                       <li className="nav-item">
-                        <a href="faq.html">Faq</a>
+                        <Link href="faq.html">Faq</Link>
                       </li>
                       <li className="nav-item">
-                        <a href="login.html">Login</a>
+                        <Link href="login.html">Login</Link>
                       </li>
                       <li className="nav-item">
-                        <a href="register.html">Register</a>
+                        <Link href="register.html">Register</Link>
                       </li>
                       <li className="nav-item">
-                        <a href="mail-success.html">Mail Success</a>
+                        <Link href="mail-success.html">Mail Success</Link>
                       </li>
                       <li className="nav-item">
-                        <a href="404.html">404 Error</a>
+                        <Link href="404.html">404 Error</Link>
                       </li>
                     </ul>
                   </li>
+
+                  {/* ?Bo? */}
+
+                  <NavDropdown title="Pages" id="navbarScrollingDropdown">
+                    <NavDropdown.Item href="#action3">
+                      About Us
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action3">Faq </NavDropdown.Item>
+                    <NavDropdown.Item href="#action3">Login </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                      Register
+                    </NavDropdown.Item>
+
+                    <NavDropdown.Item href="#action4">
+                      Register
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action5">
+                      Something else here
+                    </NavDropdown.Item>
+                  </NavDropdown>
+
+                  {/* ?Bo? */}
                   <li className="nav-item">
-                    <a
+                    <Link
                       className="dd-menu collapsed"
                       href="javascript:void(0)"
                       data-bs-toggle="collapse"
@@ -159,27 +191,27 @@ function CategoriesBar() {
                       aria-label="Toggle navigation"
                     >
                       Shop
-                    </a>
+                    </Link>
                     <ul className="sub-menu collapse" id="submenu-1-3">
                       <li className="nav-item">
-                        <a href="product-grids.html">Shop Grid</a>
+                        <Link href="product-grids.html">Shop Grid</Link>
                       </li>
                       <li className="nav-item">
-                        <a href="product-list.html">Shop List</a>
+                        <Link href="product-list.html">Shop List</Link>
                       </li>
                       <li className="nav-item">
-                        <a href="product-details.html">shop Single</a>
+                        <Link href="product-details.html">shop Single</Link>
                       </li>
                       <li className="nav-item">
-                        <a href="cart.html">Cart</a>
+                        <Link href="cart.html">Cart</Link>
                       </li>
                       <li className="nav-item">
-                        <a href="checkout.html">Checkout</a>
+                        <Link href="checkout.html">Checkout</Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a
+                    <Link
                       className="dd-menu collapsed"
                       href="javascript:void(0)"
                       data-bs-toggle="collapse"
@@ -189,25 +221,27 @@ function CategoriesBar() {
                       aria-label="Toggle navigation"
                     >
                       Blog
-                    </a>
+                    </Link>
                     <ul className="sub-menu collapse" id="submenu-1-4">
                       <li className="nav-item">
-                        <a href="blog-grid-sidebar.html">Blog Grid Sidebar</a>
+                        <Link href="blog-grid-sidebar.html">
+                          Blog Grid Sidebar
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a href="blog-single.html">Blog Single</a>
+                        <Link href="blog-single.html">Blog Single</Link>
                       </li>
                       <li className="nav-item">
-                        <a href="blog-single-sidebar.html">
+                        <Link href="blog-single-sidebar.html">
                           Blog Single Sibebar
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a href="contact.html" aria-label="Toggle navigation">
+                    <Link href="contact.html" aria-label="Toggle navigation">
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>{" "}
@@ -222,24 +256,28 @@ function CategoriesBar() {
             <h5 className="title">Follow Us:</h5>
             <ul>
               <li>
-                <a href="javascript:void(0)">
-                  <i className="lni lni-facebook-filled" />
-                </a>
+                <Link href="javascript:void(0)">
+                  {/* <i className="lni lni-facebook-filled" /> */}
+                  <FaFacebookF className="lni lni-facebook-fille" />
+                </Link>
               </li>
               <li>
-                <a href="javascript:void(0)">
-                  <i className="lni lni-twitter-original" />
-                </a>
+                <Link href="javascript:void(0)">
+                  {/* <i className="lni lni-twitter-original" /> */}
+                  <FaTwitter className="lni lni-twitter-original" />
+                </Link>
               </li>
               <li>
-                <a href="javascript:void(0)">
-                  <i className="lni lni-instagram" />
-                </a>
+                <Link href="javascript:void(0)">
+                  {/* <i className="lni lni-instagram" /> */}
+                  <FaInstagram className="lni lni-instagram" />
+                </Link>
               </li>
               <li>
-                <a href="javascript:void(0)">
-                  <i className="lni lni-skype" />
-                </a>
+                <Link href="javascript:void(0)">
+                  {/* <i className="lni lni-skype" /> */}
+                  <FaSkype className="lni lni-skype" />
+                </Link>
               </li>
             </ul>
           </div>

@@ -4,11 +4,9 @@ const ShoppingInfo = () => {
   return (
     <div>
       <>
-        {/* Start Shipping Info */}
         <section className="shipping-info">
           <div className="container">
             <ul>
-              {/* Free Shipping */}
               <li>
                 <div className="media-icon">
                   <i className="lni lni-delivery" />
@@ -18,7 +16,6 @@ const ShoppingInfo = () => {
                   <span>On order over $99</span>
                 </div>
               </li>
-              {/* Money Return */}
               <li>
                 <div className="media-icon">
                   <i className="lni lni-support" />
@@ -28,7 +25,6 @@ const ShoppingInfo = () => {
                   <span>Live Chat Or Call.</span>
                 </div>
               </li>
-              {/* Support 24/7 */}
               <li>
                 <div className="media-icon">
                   <i className="lni lni-credit-cards" />
@@ -38,7 +34,6 @@ const ShoppingInfo = () => {
                   <span>Secure Payment Services.</span>
                 </div>
               </li>
-              {/* Safe Payment */}
               <li>
                 <div className="media-icon">
                   <i className="lni lni-reload" />
@@ -51,7 +46,6 @@ const ShoppingInfo = () => {
             </ul>
           </div>
         </section>
-        {/* End Shipping Info */}
       </>
     </div>
   );

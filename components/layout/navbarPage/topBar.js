@@ -1,4 +1,6 @@
 import React from "react";
+import { CiHeart } from "react-icons/ci";
+
 
 function TopBar() {
   return (
@@ -44,13 +46,13 @@ function TopBar() {
             <div className="top-middle">
               <ul className="useful-links">
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="./home">Home</a>
                 </li>
                 <li>
-                  <a href="about-us.html">About Us</a>
+                  <a href="./about">About Us</a>
                 </li>
                 <li>
-                  <a href="contact.html">Contact Us</a>
+                  <a href="./contact">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -63,10 +65,10 @@ function TopBar() {
               </div>
               <ul className="user-login">
                 <li>
-                  <a href="login.html">Sign In</a>
+                  <a href="./login">Sign In</a>
                 </li>
                 <li>
-                  <a href="register.html">Register</a>
+                  <a href="./signUp">Register</a>
                 </li>
               </ul>
             </div>

@@ -1,4 +1,9 @@
+import Link from "next/link";
 import React from "react";
+import { CiHeart } from "react-icons/ci";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+
 
 function MiddleBar() {
   return (
@@ -7,16 +12,12 @@ function MiddleBar() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-3 col-md-3 col-7">
-              {/* Start Header Logo */}
-              <a className="navbar-brand" href="index.html">
+              <Link className="navbar-brand" href="index.html">
                 <img src="assets/images/logo/logo.svg" alt="Logo" />
-              </a>
-              {/* End Header Logo */}
+              </Link>
             </div>
             <div className="col-lg-5 col-md-7 d-xs-none">
-              {/* Start Main Menu Search */}
               <div className="main-menu-search">
-                {/* navbar search start */}
                 <div className="navbar-search search-style-5">
                   <div className="search-select">
                     <div className="select-position">
@@ -39,14 +40,14 @@ function MiddleBar() {
                     </button>
                   </div>
                 </div>
-                {/* navbar search Ends */}
               </div>
-              {/* End Main Menu Search */}
             </div>
             <div className="col-lg-4 col-md-2 col-5">
               <div className="middle-right-area">
                 <div className="nav-hotline">
-                  <i className="lni lni-phone" />
+                  < FaPhoneAlt className="lni lni-phone" />
+                  {/* < className="lni lni-phone" /> */}
+
                   <h3>
                     Hotline:
                     <span>(+100) 123 456 7890</span>
@@ -54,44 +55,50 @@ function MiddleBar() {
                 </div>
                 <div className="navbar-cart">
                   <div className="wishlist">
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-heart" />
+                    <Link href="javascript:void(0)">
+                      {/* <i className="lni lni-heart" /> */}
+                      <CiHeart className="lni-heart" />
+
                       <span className="total-items">0</span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="cart-items">
-                    <a href="javascript:void(0)" className="main-btn">
-                      <i className="lni lni-cart" />
+                    <Link href="javascript:void(0)" className="main-btn">
+                      {/* <i className="lni lni-cart" /> */}
+                      <MdOutlineShoppingCart className="lni-cart" />
+
                       <span className="total-items">2</span>
-                    </a>
-                    {/* Shopping Item */}
+                    </Link>
                     <div className="shopping-item">
                       <div className="dropdown-cart-header">
                         <span>2 Items</span>
-                        <a href="cart.html">View Cart</a>
+                        <Link href="cart.html">View Cart</Link>
                       </div>
                       <ul className="shopping-list">
                         <li>
-                          <a
+                          <Link
                             href="javascript:void(0)"
                             className="remove"
                             title="Remove this item"
                           >
                             <i className="lni lni-close" />
-                          </a>
+                          </Link>
                           <div className="cart-img-head">
-                            <a className="cart-img" href="product-details.html">
+                            <Link
+                              className="cart-img"
+                              href="product-details.html"
+                            >
                               <img
                                 src="assets/images/header/cart-items/item1.jpg"
                                 alt="#"
                               />
-                            </a>
+                            </Link>
                           </div>
                           <div className="content">
                             <h4>
-                              <a href="product-details.html">
+                              <Link href="product-details.html">
                                 Apple Watch Series 6
-                              </a>
+                              </Link>
                             </h4>
                             <p className="quantity">
                               1x - <span className="amount">$99.00</span>
@@ -99,26 +106,29 @@ function MiddleBar() {
                           </div>
                         </li>
                         <li>
-                          <a
+                          <Link
                             href="javascript:void(0)"
                             className="remove"
                             title="Remove this item"
                           >
                             <i className="lni lni-close" />
-                          </a>
+                          </Link>
                           <div className="cart-img-head">
-                            <a className="cart-img" href="product-details.html">
+                            <Link
+                              className="cart-img"
+                              href="product-details.html"
+                            >
                               <img
                                 src="assets/images/header/cart-items/item2.jpg"
                                 alt="#"
                               />
-                            </a>
+                            </Link>
                           </div>
                           <div className="content">
                             <h4>
-                              <a href="product-details.html">
+                              <Link href="product-details.html">
                                 Wi-Fi Smart Camera
-                              </a>
+                              </Link>
                             </h4>
                             <p className="quantity">
                               1x - <span className="amount">$35.00</span>
@@ -132,13 +142,12 @@ function MiddleBar() {
                           <span className="total-amount">$134.00</span>
                         </div>
                         <div className="button">
-                          <a href="checkout.html" className="btn animate">
+                          <Link href="checkout.html" className="btn animate">
                             Checkout
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
-                    {/*/ End Shopping Item */}
                   </div>
                 </div>
               </div>
