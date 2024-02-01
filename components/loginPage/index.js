@@ -99,8 +99,7 @@ function LoginPage() {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div> );
 }
 
 export default LoginPage;
