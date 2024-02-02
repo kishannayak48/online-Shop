@@ -33,29 +33,40 @@ function SignUpPage() {
 
   return (
     <>
-      <Container>
-        <Row>
-          <Col>
-            <h4 className="text-center fw-bolder fs-2">Register</h4>
+      <div
+        className="container-fluid vh-100 overflow-auto "
+        style={{
+          backgroundImage: 'url("assets/images/register.jpg")',
+          backgroundSize: "cover",
+          minHeight: "100vh",
+          // display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <div className="row vh-100  ">
+          <div className="col-lg-6 bg-gray p-5 text-center">
+            {/* <h4 className="text-center fw-bolder fs-2">Register</h4>
             <p className="mb-3 fs-7">
               Register Now and Fell the New Digital World
-            </p>
-            <Link href="./signUp">
+            </p> */}
+
+            {/* <Link href="./signUp">
               <button className="btn fw-bold mb-5 btn-outline-success px-4 rounded-pill">
-                Login 
+                Login
               </button>
-            </Link>
+            </Link> */}
             <div className="img-cover p-4">
               <Image
-                height={350}
-                width={350}
-                src="/assets/images/loginbg.jpeg"
+                height={500}
+                width={500}
+                src="/assets/images/register.png"
                 alt=""
               />
             </div>
-          </Col>
-          <Col>
-            <div>
+          </div>
+
+          <div className="col-lg-6 p  vh-100">
+            <div className="row d-flex vh-100">
               <form onSubmit={handleSubmit} className={Styles.form}>
                 <h3 className={Styles.h3}>Registration Form</h3>
                 <div className={Styles.div}>
@@ -67,10 +78,12 @@ function SignUpPage() {
                     type="text"
                     id="firstName"
                     name="firstName"
+                    placeholder="First Name"
                     value={formData.firstName}
                     onChange={handleChange}
                   />
                 </div>
+
                 <div className={Styles.div}>
                   <label className={Styles.label} htmlFor="lastName">
                     Last Name
@@ -80,6 +93,7 @@ function SignUpPage() {
                     type="text"
                     id="lastName"
                     name="lastName"
+                    placeholder="Last Name "
                     value={formData.lastName}
                     onChange={handleChange}
                   />
@@ -93,6 +107,7 @@ function SignUpPage() {
                     type="text"
                     id="email"
                     name="email"
+                    placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
                   />
@@ -106,6 +121,7 @@ function SignUpPage() {
                     type="password"
                     id="password"
                     name="password"
+                    placeholder="Password "
                     value={formData.password}
                     onChange={handleChange}
                   />
@@ -119,6 +135,7 @@ function SignUpPage() {
                     type="password"
                     id="confirmPassword"
                     name="confirmPassword"
+                    placeholder=" Confirm Password"
                     value={formData.confirmPassword}
                     onChange={handleChange}
                   />
@@ -141,12 +158,9 @@ function SignUpPage() {
                 </button>
               </form>
             </div>
-          </Col>
-        </Row>
-      </Container>
-      {/* <Container className={Styles.body}> */}
-
-      {/* </Container> */}
+          </div>
+        </div>
+      </div>
     </>
   );
 }

@@ -138,7 +138,7 @@ function CategoriesBar() {
                     </Link>
                     <ul className="sub-menu collapse" id="submenu-1-2">
                       <li className="nav-item">
-                        <Link href="about-us.html">About Us</Link>
+                        <Link href="./about-us">About Us</Link>
                       </li>
                       <li className="nav-item">
                         <Link href="faq.html">Faq</Link>
@@ -158,28 +158,6 @@ function CategoriesBar() {
                     </ul>
                   </li>
 
-                  {/* ?Bo? */}
-
-                  <NavDropdown title="Pages" id="navbarScrollingDropdown">
-                    <NavDropdown.Item href="#action3">
-                      About Us
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action3">Faq </NavDropdown.Item>
-                    <NavDropdown.Item href="#action3">Login </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Register
-                    </NavDropdown.Item>
-
-                    <NavDropdown.Item href="#action4">
-                      Register
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
-                  </NavDropdown>
-
-                  {/* ?Bo? */}
                   <li className="nav-item">
                     <Link
                       className="dd-menu collapsed"
