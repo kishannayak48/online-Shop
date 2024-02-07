@@ -22,7 +22,9 @@ function CategoriesBar() {
                   </Link>
                   <ul className="inner-sub-category">
                     <li>
-                      <Link href="product-grids.html">Digital Cameras</Link>
+                      <Link href="product-grids./digitalCamera">
+                        Digital Cameras
+                      </Link>
                     </li>
                     <li>
                       <Link href="product-grids.html">Camcorders</Link>

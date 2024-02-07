@@ -1,6 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {
+  FaApple,
+  FaFacebookF,
+  FaGoogle,
+  FaInstagram,
+  FaSkype,
+  FaTwitter,
+} from "react-icons/fa";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 const FooterPage = () => {
   return (
@@ -84,14 +93,17 @@ const FooterPage = () => {
                   <ul className="app-btn">
                     <li>
                       <Link href="javascript:void(0)">
-                        <i className="lni lni-apple" />
+                        {/* <i /> */}
+                        <FaApple className="lni lni-apple" />
+
                         <span className="small-title">Download on the</span>
                         <span className="big-title">App Store</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="javascript:void(0)">
-                        <i className="lni lni-play-store" />
+                        {/* <i /> */}
+                        <IoLogoGooglePlaystore className="lni lni-play-store" />
                         <span className="small-title">Download on the</span>
                         <span className="big-title">Google Play</span>
                       </Link>
@@ -189,7 +201,7 @@ const FooterPage = () => {
                   <li>
                     <span>Follow Us On:</span>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="javascript:void(0)">
                       <i className="lni lni-facebook-filled" />
                     </Link>
@@ -207,6 +219,31 @@ const FooterPage = () => {
                   <li>
                     <Link href="javascript:void(0)">
                       <i className="lni lni-google" />
+                    </Link>
+                  </li> */}
+
+                  <li>
+                    <Link href="javascript:void(0)">
+                      {/* <i className="lni lni-facebook-filled" /> */}
+                      <FaFacebookF className="lni lni-facebook-fille" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="javascript:void(0)">
+                      {/* <i className="lni lni-twitter-original" /> */}
+                      <FaTwitter className="lni lni-twitter-original" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="javascript:void(0)">
+                      {/* <i className="lni lni-instagram" /> */}
+                      <FaInstagram className="lni lni-instagram" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="javascript:void(0)">
+                      {/* <i className="lni lni-skype" /> */}
+                      <FaGoogle className="lni lni-skype" />
                     </Link>
                   </li>
                 </ul>

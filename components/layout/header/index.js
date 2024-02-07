@@ -4,7 +4,7 @@ import NavbarPage from "../navbarPage";
 export default function HeaderPage() {
   return (
     <>
-      <header class="header navbar-area">
+      <header className="header navbar-area">
         <NavbarPage />
       </header>
     </>

@@ -1,6 +1,8 @@
+import Link from "next/link";
 import React from "react";
-import { CiHeart } from "react-icons/ci";
-
+import { BiUserCircle } from "react-icons/bi";
+import { FaRegUser } from "react-icons/fa";
+import { MdSupervisorAccount } from "react-icons/md";
 
 function TopBar() {
   return (
@@ -46,13 +48,13 @@ function TopBar() {
             <div className="top-middle">
               <ul className="useful-links">
                 <li>
-                  <a href="./home">Home</a>
+                  <Link href="./home">Home</Link>
                 </li>
                 <li>
-                  <a href="./about">About Us</a>
+                  <Link href="./about">About Us</Link>
                 </li>
                 <li>
-                  <a href="./contact">Contact Us</a>
+                  <Link href="./contact">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -60,15 +62,17 @@ function TopBar() {
           <div className="col-lg-4 col-md-4 col-12">
             <div className="top-end">
               <div className="user">
-                <i className="lni lni-user" />
-                Hello
+                {/* <i className="lni lni-c" /> */}
+                <FaRegUser style={{ color: "red", fontSize: "20px" }} /> Hello
               </div>
               <ul className="user-login">
+                <BiUserCircle style={{ color: "red", fontSize: "25px" }} />
                 <li>
-                  <a href="./login">Sign In</a>
+                  <Link href="./login">Login </Link>
                 </li>
+
                 <li>
-                  <a href="./signUp">Register</a>
+                  <Link href="./signUp">Register</Link>
                 </li>
               </ul>
             </div>

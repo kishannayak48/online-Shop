@@ -1,4 +1,8 @@
-import React from 'react'
+import React from "react";
+import { TfiReload } from "react-icons/tfi";
+import { GrCreditCard } from "react-icons/gr";
+import { MdSupportAgent } from "react-icons/md";
+import { FaShippingFast } from "react-icons/fa";
 
 const ShoppingInfo = () => {
   return (
@@ -10,6 +14,7 @@ const ShoppingInfo = () => {
               <li>
                 <div className="media-icon">
                   <i className="lni lni-delivery" />
+                  <FaShippingFast />
                 </div>
                 <div className="media-body">
                   <h5>Free Shipping</h5>
@@ -19,6 +24,7 @@ const ShoppingInfo = () => {
               <li>
                 <div className="media-icon">
                   <i className="lni lni-support" />
+                  <MdSupportAgent />
                 </div>
                 <div className="media-body">
                   <h5>24/7 Support.</h5>
@@ -28,6 +34,7 @@ const ShoppingInfo = () => {
               <li>
                 <div className="media-icon">
                   <i className="lni lni-credit-cards" />
+                  <GrCreditCard />
                 </div>
                 <div className="media-body">
                   <h5>Online Payment.</h5>
@@ -37,6 +44,7 @@ const ShoppingInfo = () => {
               <li>
                 <div className="media-icon">
                   <i className="lni lni-reload" />
+                  <TfiReload className="lni lni-reload" />
                 </div>
                 <div className="media-body">
                   <h5>Easy Return.</h5>
@@ -49,6 +57,6 @@ const ShoppingInfo = () => {
       </>
     </div>
   );
-}
+};
 
-export default ShoppingInfo
+export default ShoppingInfo;
