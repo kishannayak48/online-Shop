@@ -43,6 +43,10 @@ function SignUpPage() {
           alignItems: "center",
         }}
       >
+        {/* <div className={Styles.background}>
+          <div className={Styles.shape}></div>
+          <div className={Styles.shape}></div>
+        </div> */}
         <div className="row vh-100  ">
           <div className="col-lg-6 bg-gray p-5 text-center">
             {/* <h4 className="text-center fw-bolder fs-2">Register</h4>

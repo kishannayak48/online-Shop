@@ -6,7 +6,6 @@ import CallAction from "./callAction";
 import BannerArea from "./bannerArea";
 import HeadPage from "../layout/HeadPage";
 import ShoppingInfo from "./shoppingInfo";
-import CounterSections from "./counterSections";
 
 function LendingPage() {
   return (
@@ -19,7 +18,6 @@ function LendingPage() {
           <CallAction />
           <BannerArea />
           <ShoppingInfo />
-          <CounterSections />
         </main>
       </HeadPage>
     </>
