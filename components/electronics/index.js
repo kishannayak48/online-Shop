@@ -7,4 +7,4 @@ function ElectronicsItems(){
   <DigitalCamera/>
   </>
   );
-}export default;
+}export default ElectronicsItems;
