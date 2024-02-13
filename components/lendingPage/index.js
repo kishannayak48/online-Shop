@@ -13,7 +13,6 @@ function LendingPage() {
     <>
       <HeadPage title={HEAD_TITLES.home}>
         <main>
-          <DemoWork />
           <HeroAds />
           <TrendingProduct />
 
