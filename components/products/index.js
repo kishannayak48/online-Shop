@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 import Link from "next/link";
 import Ratings from "../lendingPage/Ratings";
 
-const AxiosApp = () => {
+const AllProdect = () => {
   const [proData, setProData] = useState([]);
 
   useEffect(() => {
@@ -66,4 +66,4 @@ const AxiosApp = () => {
   );
 };
 
-export default AxiosApp;
+export default AllProdect;

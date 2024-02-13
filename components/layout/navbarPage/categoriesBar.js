@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import { NavDropdown } from "react-bootstrap";
+// import { NavDropdown } from "react-bootstrap";
+import { FaChevronRight } from "react-icons/fa";
+
 import { FaFacebookF, FaInstagram, FaSkype, FaTwitter } from "react-icons/fa6";
 
 function CategoriesBar() {
@@ -17,8 +19,10 @@ function CategoriesBar() {
               </span>
               <ul className="sub-category">
                 <li>
-                  <Link href="product-grids.html">
-                    Electronics <i className="lni lni-chevron-right" />
+                  <Link href="/product">
+                    Electronics
+                    {/* <i className="lni lni-chevron-right" /> */}
+                    <FaChevronRight />
                   </Link>
                   <ul className="inner-sub-category">
                     <li>
