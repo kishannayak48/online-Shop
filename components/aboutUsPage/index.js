@@ -1,7 +1,8 @@
 import React from "react";
+import DemoWork from "../demoWork";
 
 function AboutUsPage() {
-  return <div>heidhih</div>;
+  return <DemoWork />;
 }
 
 export default AboutUsPage;

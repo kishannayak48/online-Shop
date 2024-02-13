@@ -1,8 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import { CiHeart } from "react-icons/ci";
+import { CiHeart, CiSearch } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaRegWindowClose } from "react-icons/fa";
+import Image from "next/image";
 
 function MiddleBar() {
   return (
@@ -11,7 +12,12 @@ function MiddleBar() {
         <div className="row align-items-center">
           <div className="col-lg-3 col-md-3 col-7">
             <Link className="navbar-brand" href="index.html">
-              <img src="assets/images/logo/logo.svg" alt="Logo" />
+              <Image
+                height={100}
+                width={100}
+                src="/assets/images/logo/logo.svg"
+                alt="Logo"
+              />
             </Link>
           </div>
           <div className="col-lg-5 col-md-7 d-xs-none">
@@ -34,7 +40,8 @@ function MiddleBar() {
                 </div>
                 <div className="search-btn">
                   <button>
-                    <i className="lni lni-search-alt" />
+                    {/* <i className="lni lni-search-alt" /> */}
+                    <CiSearch />
                   </button>
                 </div>
               </div>
@@ -43,7 +50,7 @@ function MiddleBar() {
           <div className="col-lg-4 col-md-2 col-5">
             <div className="middle-right-area">
               <div className="nav-hotline">
-                <FaPhoneAlt className="lni lni-phone" />
+                <FaPhoneAlt />
                 <h3>
                   Hotline:
                   <span>(+100) 123 456 7890</span>
@@ -78,15 +85,18 @@ function MiddleBar() {
                           className="remove"
                           title="Remove this item"
                         >
-                          <i className="lni lni-close" />
+                          {/* <i className="lni lni-close" /> */}
+                          <FaRegWindowClose />
                         </Link>
                         <div className="cart-img-head">
                           <Link
                             className="cart-img"
                             href="product-details.html"
                           >
-                            <img
-                              src="assets/images/header/cart-items/item1.jpg"
+                            <Image
+                              height={100}
+                              width={100}
+                              src="/assets/images/header/cart-items/item1.jpg"
                               alt="#"
                             />
                           </Link>
@@ -115,8 +125,10 @@ function MiddleBar() {
                             className="cart-img"
                             href="product-details.html"
                           >
-                            <img
-                              src="assets/images/header/cart-items/item2.jpg"
+                            <Image
+                              height={100}
+                              width={100}
+                              src="/assets/images/header/cart-items/item2.jpg"
                               alt="#"
                             />
                           </Link>

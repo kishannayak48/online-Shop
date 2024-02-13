@@ -6,12 +6,14 @@ import CallAction from "./callAction";
 import BannerArea from "./bannerArea";
 import HeadPage from "../layout/HeadPage";
 import ShoppingInfo from "./shoppingInfo";
+import DemoWork from "../demoWork";
 
 function LendingPage() {
   return (
     <>
       <HeadPage title={HEAD_TITLES.home}>
         <main>
+          <DemoWork />
           <HeroAds />
           <TrendingProduct />
 
