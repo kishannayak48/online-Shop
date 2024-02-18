@@ -1,5 +1,8 @@
+import { productionBrowserSourceMaps } from "@/next.config";
+import Product from "@/pages/product";
 import Link from "next/link";
-import React from "react";
+import React, { Component, useEffect, useState } from "react";
+import { Button, Card } from "react-bootstrap";
 // import { NavDropdown } from "react-bootstrap";
 import { FaChevronRight } from "react-icons/fa";
 
@@ -100,6 +103,7 @@ function CategoriesBar() {
                 </li>
               </ul>
             </div>
+
             {/* End Mega Category Menu */}
             {/* Start Navbar */}
             <nav className="navbar navbar-expand-lg">
