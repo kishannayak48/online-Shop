@@ -3,6 +3,7 @@ import AxiosApp from "./axios";
 function DemoWork() {
   return (
     <>
+<<<<<<< HEAD
       <AxiosApp />
     </>
     // <div>
@@ -98,6 +99,11 @@ function DemoWork() {
     //       </div>
     //     </div>
     //   </div>
+=======
+<AxiosApp/>   
+ </>
+   
+>>>>>>> origin/main
   );
 }
 

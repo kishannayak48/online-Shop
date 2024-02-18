@@ -1,6 +1,10 @@
 import Link from "next/link";
 import React from "react";
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 function HeroAds() {
   return (
     <section className="hero-area">
@@ -20,6 +24,10 @@ function HeroAds() {
                       <span>No restocking fee ($35 savings)</span>
                       M75 Sport Watch
                     </h2>
+<<<<<<< HEAD
+=======
+                    
+>>>>>>> origin/main
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna

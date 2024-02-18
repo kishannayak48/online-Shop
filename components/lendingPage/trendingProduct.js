@@ -249,6 +249,10 @@ const TrendingProduct = () => {
         </div>
       </div>
     </section>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> origin/main
   );
 };
 
